@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/site-fluxomize/static/css/main.e6c13ad2.css",
+    "main.js": "/site-fluxomize/static/js/main.85deeede.js",
+    "static/js/453.b1cfb95e.chunk.js": "/site-fluxomize/static/js/453.b1cfb95e.chunk.js",
+    "index.html": "/site-fluxomize/index.html",
+    "main.e6c13ad2.css.map": "/site-fluxomize/static/css/main.e6c13ad2.css.map",
+    "main.85deeede.js.map": "/site-fluxomize/static/js/main.85deeede.js.map",
+    "453.b1cfb95e.chunk.js.map": "/site-fluxomize/static/js/453.b1cfb95e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.85deeede.js"
+  ]
+}
