@@ -36,7 +36,7 @@ jobs:
         run: npm run build
         env:
           CI: false # Evita que build falhe por warnings
-          PUBLIC_URL: /site-fluxomize # Substitua pelo nome do seu repositório
+          PUBLIC_URL: / # Removido o /site-fluxomize para funcionar com domínio personalizado
           REACT_APP_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
           REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
           REACT_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}

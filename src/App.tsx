@@ -11,11 +11,8 @@ import Footer from './components/common/Footer';
 import { Hero } from './components/common/Hero';
 
 function App() {
-  // Ajuste para o GitHub Pages - use o basename com o nome do repositório
-  const basename = process.env.PUBLIC_URL;
-  
   return (
-    <Router basename={basename}>
+    <Router>
       <GlobalStyle />
       <Header />
       <Routes>
