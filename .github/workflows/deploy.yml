@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main # ou master, dependendo da sua branch padrão
+      - main
 
 permissions:
   contents: read
@@ -35,8 +35,8 @@ jobs:
       - name: Build site
         run: npm run build
         env:
-          CI: false # Evita que build falhe por warnings
-          PUBLIC_URL: / # Removido o /site-fluxomize para funcionar com domínio personalizado
+          CI: false
+          PUBLIC_URL: /
           REACT_APP_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
           REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
           REACT_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}

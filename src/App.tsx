@@ -12,7 +12,7 @@ import { Hero } from './components/common/Hero';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <GlobalStyle />
       <Header />
       <Routes>
