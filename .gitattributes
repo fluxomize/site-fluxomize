@@ -1,0 +1,7 @@
+# Arquivos de workflow do GitHub Actions
+.github/workflows/*.yml text eol=lf
+.github/workflows/*.yaml text eol=lf
+
+# Arquivos de configuração
+*.yml text eol=lf
+*.yaml text eol=lf 
