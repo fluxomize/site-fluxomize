@@ -43,6 +43,11 @@ jobs:
       - name: Create .nojekyll file
         run: touch build/.nojekyll
 
+      - name: Create 404.html
+        run: |
+          cp build/index.html build/404.html
+          sed -i 's/<base href="\/" \/>/<base href="\/" \/><script>window.location.href = window.location.pathname + window.location.search + window.location.hash;<\/script>/' build/404.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
