@@ -2,7 +2,7 @@
   "name": "gst-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fluxomize.com.br",
+  "homepage": "https://fluxomize.github.io/site-fluxomize",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.14.0",
@@ -34,7 +34,8 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build -b gh-pages --dotfiles",
     "verify-workflow": "powershell -File scripts/verify-workflow.ps1",
-    "prepush": "npm run verify-workflow"
+    "prepush": "npm run verify-workflow",
+    "push": "powershell -File scripts/push.ps1"
   },
   "eslintConfig": {
     "extends": [

@@ -13,4 +13,8 @@ if ($LASTEXITCODE -ne 0) {
     exit 1
 }
 
-Write-Host "✅ Arquivo de workflow verificado com sucesso!" -ForegroundColor Green 
+Write-Host "✅ Arquivo de workflow verificado com sucesso!" -ForegroundColor Green
+
+# Faz o push se a verificação for bem sucedida
+Write-Host "🚀 Fazendo push para o repositório..." -ForegroundColor Yellow
+git push origin main 
