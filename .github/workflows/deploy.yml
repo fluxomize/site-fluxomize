@@ -36,7 +36,7 @@ jobs:
         run: npm run build
         env:
           CI: false
-          PUBLIC_URL: https://www.fluxomize.com
+          PUBLIC_URL: /
           REACT_APP_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
           REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
           REACT_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
@@ -46,10 +46,8 @@ jobs:
           touch build/.nojekyll
           echo "Disabling Jekyll processing"
 
-      - name: Create 404.html
-        run: |
-          cp build/index.html build/404.html
-          sed -i 's/<base href="\/" \/>/<base href="\/" \/><script>window.location.href = window.location.pathname + window.location.search + window.location.hash;<\/script>/' build/404.html
+      - name: Copy index.html to 404.html
+        run: cp build/index.html build/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
