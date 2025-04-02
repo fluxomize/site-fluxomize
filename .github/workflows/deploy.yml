@@ -36,7 +36,7 @@ jobs:
         run: npm run build
         env:
           CI: false
-          PUBLIC_URL: /
+          PUBLIC_URL: /site-fluxomize
           REACT_APP_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
           REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
           REACT_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
@@ -64,6 +64,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          branch: gh-pages 
+        uses: actions/deploy-pages@v4 
