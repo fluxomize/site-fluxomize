@@ -36,13 +36,16 @@ jobs:
         run: npm run build
         env:
           CI: false
+          REACT_APP_PUBLIC_URL: /site-fluxomize
           PUBLIC_URL: /site-fluxomize
           REACT_APP_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
           REACT_APP_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID }}
           REACT_APP_EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
 
       - name: Create .nojekyll file
-        run: touch build/.nojekyll
+        run: |
+          touch build/.nojekyll
+          echo "Disabling Jekyll processing"
 
       - name: Create 404.html
         run: |

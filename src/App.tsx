@@ -12,7 +12,7 @@ import { Hero } from './components/common/Hero';
 
 function App() {
   return (
-    <Router basename="/site-fluxomize">
+    <Router>
       <GlobalStyle />
       <Header />
       <Routes>
