@@ -1,6 +1,6 @@
 // src/App.tsx
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from './pages/Home';
 import { GlobalStyle } from './styles/globalStyles';
 import { Header } from './components/common/Header';
@@ -12,7 +12,7 @@ import { Hero } from './components/common/Hero';
 
 function App() {
   return (
-    <Router basename="/site-fluxomize">
+    <Router>
       <GlobalStyle />
       <Header />
       <Routes>
