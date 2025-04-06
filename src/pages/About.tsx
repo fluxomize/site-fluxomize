@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { Typography, Grid, Paper } from '@mui/material';
 
 const AboutContainer = styled.section`
-  padding: 4rem 2rem;
+  padding: 2rem;
   background: var(--background);
-  min-height: 100vh;
+  min-height: auto;
 `;
 
 const Content = styled.div`

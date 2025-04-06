@@ -15,11 +15,11 @@ const float = keyframes`
 
 const HeroContainer = styled.section`
   position: relative;
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem;
+  padding: 2rem;
   background: var(--background);
   overflow: hidden;
 `;
@@ -81,6 +81,7 @@ const CTAButton = styled.button`
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 242, 255, 0.3);
+    background: linear-gradient(45deg, var(--primary-light), var(--primary));
   }
 
   &:active {

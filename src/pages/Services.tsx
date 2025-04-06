@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { Paper, Typography } from '@mui/material';
 
 const ServicesContainer = styled.section`
-  padding: 4rem 2rem;
+  padding: 2rem;
   background: var(--background);
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
