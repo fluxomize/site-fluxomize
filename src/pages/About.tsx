@@ -60,6 +60,47 @@ const ServiceDescription = styled(Typography)`
   line-height: 1.6 !important;
 `;
 
+const ValuesGrid = styled(Grid)`
+  margin-top: 3rem;
+  
+  .MuiGrid-item {
+    display: flex;
+  }
+`;
+
+const ValueCard = styled(Paper)`
+  padding: 2rem;
+  text-align: center;
+  background: var(--shape) !important;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 300px;
+  width: 100%;
+  
+  &:hover {
+    transform: translateY(-5px);
+    background: var(--shape-hover) !important;
+    border-color: var(--primary);
+  }
+  
+  h3 {
+    color: var(--text);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex-grow: 1;
+  }
+`;
+
 export const About: React.FC = () => {
   return (
     <AboutContainer>
@@ -95,43 +136,37 @@ export const About: React.FC = () => {
         <SectionTitle variant="h4">
           Valores
         </SectionTitle>
-        <Grid container spacing={3}>
+        <ValuesGrid container spacing={3}>
           <Grid item xs={12} md={4}>
-            <ServiceCard elevation={0}>
-              <ServiceTitle variant="h5">
-                1. Inteligência Estratégica
-              </ServiceTitle>
-              <ServiceDescription variant="body1">
+            <ValueCard elevation={0}>
+              <h3>1. Inteligência Estratégica</h3>
+              <p>
                 Cada ação parte de uma leitura ampla do contexto e se conecta com objetivos reais.
                 Pensamos antes de construir — e construímos para durar.
-              </ServiceDescription>
-            </ServiceCard>
+              </p>
+            </ValueCard>
           </Grid>
 
           <Grid item xs={12} md={4}>
-            <ServiceCard elevation={0}>
-              <ServiceTitle variant="h5">
-                2. Clareza Aplicada
-              </ServiceTitle>
-              <ServiceDescription variant="body1">
+            <ValueCard elevation={0}>
+              <h3>2. Clareza Aplicada</h3>
+              <p>
                 Eliminamos a complexidade desnecessária.
                 Entregamos estruturas objetivas, compreensíveis e com foco total em resultado.
-              </ServiceDescription>
-            </ServiceCard>
+              </p>
+            </ValueCard>
           </Grid>
 
           <Grid item xs={12} md={4}>
-            <ServiceCard elevation={0}>
-              <ServiceTitle variant="h5">
-                3. Responsabilidade
-              </ServiceTitle>
-              <ServiceDescription variant="body1">
+            <ValueCard elevation={0}>
+              <h3>3. Responsabilidade</h3>
+              <p>
                 Cumprimos o que prometemos.
                 Atuamos com ética, transparência e compromisso com o impacto do que entregamos.
-              </ServiceDescription>
-            </ServiceCard>
+              </p>
+            </ValueCard>
           </Grid>
-        </Grid>
+        </ValuesGrid>
 
         <Description variant="body1">
           Hoje, a Fluxomize se destaca no mercado oferecendo soluções em três pilares fundamentais: 

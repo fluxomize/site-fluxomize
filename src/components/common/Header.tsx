@@ -61,7 +61,7 @@ export const Header = () => {
             fontSize: '1.2rem',
             fontWeight: 'bold'
           }}>
-            Fluxomize - Soluções em Tecnologia
+            Flux
           </span>
         </div>
       </Link>
