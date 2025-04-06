@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Typography, IconButton } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 const FooterContainer = styled.footer`
   background: var(--shape);
@@ -53,7 +54,7 @@ const Footer: React.FC = () => {
           </IconButton>
         </SocialLinks>
         <Copyright variant="body2">
-          &copy; {new Date().getFullYear()} Flux powered by Fluxomize. Transformando ideias em soluções digitais com inteligência e eficiência. Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} Fluxomize - Soluções em Tecnologia. Todos os direitos reservados.
         </Copyright>
       </FooterContent>
     </FooterContainer>

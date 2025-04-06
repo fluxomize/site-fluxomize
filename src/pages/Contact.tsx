@@ -14,26 +14,12 @@ const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || '';
 emailjs.init(PUBLIC_KEY);
 
 const ContactContainer = styled.section`
-  padding: 2rem;
+  padding: 4rem 2rem;
   background: var(--background);
-  min-height: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-const Content = styled.div`
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 100%;
-`;
-
-const Title = styled(Typography)`
-  color: var(--text);
-  margin-bottom: 3rem;
-  text-align: center;
-  position: relative;
-  font-weight: bold !important;
 `;
 
 const FormContainer = styled.form`
@@ -43,13 +29,13 @@ const FormContainer = styled.form`
   padding: 2rem;
   border-radius: 8px;
   border: 1px solid var(--border);
-  margin: 0 auto;
-  transition: all 0.3s ease;
+`;
 
-  &:hover {
-    border-color: var(--primary);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
+const Title = styled(Typography)`
+  color: var(--text);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold !important;
 `;
 
 const StyledTextField = styled(TextField)`
@@ -77,18 +63,6 @@ const ButtonContainer = styled.div`
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
-`;
-
-const StyledButton = styled(Button)`
-  flex: 1;
-  padding: 0.75rem !important;
-  font-weight: 600 !important;
-  transition: all 0.3s ease !important;
-  
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  }
 `;
 
 const Contact: React.FC = () => {
@@ -164,61 +138,61 @@ const Contact: React.FC = () => {
 
   return (
     <ContactContainer>
-      <Content>
+      <FormContainer onSubmit={handleSubmit}>
         <Title variant="h2">Entre em Contato</Title>
         
-        <FormContainer onSubmit={handleSubmit}>
-          <StyledTextField
-            label="Nome"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            variant="outlined"
-            required
-          />
+        <StyledTextField
+          label="Nome"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
+          variant="outlined"
+          required
+        />
 
-          <StyledTextField
-            label="Email"
-            name="email"
-            type="email"
-            value={formData.email}
-            onChange={handleChange}
-            variant="outlined"
-            required
-          />
+        <StyledTextField
+          label="Email"
+          name="email"
+          type="email"
+          value={formData.email}
+          onChange={handleChange}
+          variant="outlined"
+          required
+        />
 
-          <StyledTextField
-            label="Mensagem"
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            variant="outlined"
-            multiline
-            rows={4}
-            required
-          />
+        <StyledTextField
+          label="Mensagem"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          variant="outlined"
+          multiline
+          rows={4}
+          required
+        />
 
-          <ButtonContainer>
-            <StyledButton
-              variant="contained"
-              color="primary"
-              type="submit"
-              startIcon={<SendIcon />}
-            >
-              Enviar Email
-            </StyledButton>
+        <ButtonContainer>
+          <Button
+            variant="contained"
+            color="primary"
+            type="submit"
+            startIcon={<SendIcon />}
+            fullWidth
+          >
+            Enviar Email
+          </Button>
 
-            <StyledButton
-              variant="contained"
-              color="success"
-              onClick={handleWhatsApp}
-              startIcon={<WhatsAppIcon />}
-            >
-              WhatsApp
-            </StyledButton>
-          </ButtonContainer>
-        </FormContainer>
-      </Content>
+          <Button
+            variant="contained"
+            color="success"
+            onClick={handleWhatsApp}
+            startIcon={<WhatsAppIcon />}
+            fullWidth
+          >
+            WhatsApp
+          </Button>
+        </ButtonContainer>
+      </FormContainer>
     </ContactContainer>
   );
 };

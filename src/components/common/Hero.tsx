@@ -60,37 +60,11 @@ const HeroContent = styled.div`
   p {
     font-size: clamp(1rem, 2vw, 1.2rem);
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     line-height: 1.6;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-  }
-`;
-
-const CTAButton = styled.button`
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
-  background: linear-gradient(45deg, var(--primary), var(--primary-light));
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 242, 255, 0.3);
-    background: linear-gradient(45deg, var(--primary-light), var(--primary));
-  }
-
-  &:active {
-    transform: translateY(0);
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 242, 255, 0.3);
   }
 `;
 
@@ -119,9 +93,6 @@ export const Hero: React.FC = () => {
         <p>
           Automatizamos processos, testamos sistemas com rigor e criamos ferramentas sob medida que ajudam sua empresa a crescer com inteligência, eficiência e leveza.
         </p>
-        <CTAButton onClick={() => window.location.href = '/contact'}>
-          Fale Conosco
-        </CTAButton>
       </HeroContent>
     </HeroContainer>
   );
