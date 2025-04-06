@@ -68,48 +68,46 @@ export const Services = () => {
   return (
     <ServicesContainer>
       <SectionTitle variant="h2">
-        Nossos Serviços
+        Serviços
       </SectionTitle>
       <Grid>
-        <ServiceCard elevation={0}>
-          <ServiceIcon>
-            🤖
-          </ServiceIcon>
-          <ServiceTitle variant="h5">
-            Automação de Processos (RPA)
-          </ServiceTitle>
-          <ServiceDescription variant="body1">
-            Desenvolvemos soluções RPA de alta performance que automatizam processos repetitivos, 
-            reduzem custos operacionais e aumentam a eficiência da sua empresa. Nossas automações 
-            são escaláveis e integram-se perfeitamente aos seus sistemas existentes.
-          </ServiceDescription>
-        </ServiceCard>
-        
         <ServiceCard elevation={0}>
           <ServiceIcon>
             🧪
           </ServiceIcon>
           <ServiceTitle variant="h5">
-            Testes Automatizados
+            Testes
           </ServiceTitle>
           <ServiceDescription variant="body1">
-            Implementamos estratégias completas de testes automatizados que garantem a qualidade 
-            e confiabilidade do seu software. Utilizamos as mais modernas ferramentas de teste 
-            e práticas de CI/CD para assegurar entregas consistentes e livres de erros.
+            Realizamos testes minuciosos em sistemas e aplicações para garantir que cada funcionalidade opere exatamente como esperado.
+            Nossa abordagem criteriosa identifica falhas ocultas e oportunidades de melhoria antes que se tornem problemas, garantindo máxima qualidade, segurança e confiabilidade para o seu software.
+            Para que seu sistema funcione como deve — antes de chegar ao usuário.
           </ServiceDescription>
         </ServiceCard>
         
         <ServiceCard elevation={0}>
           <ServiceIcon>
-            🔌
+            🤖
           </ServiceIcon>
           <ServiceTitle variant="h5">
-            Desenvolvimento de APIs
+            Automações
           </ServiceTitle>
           <ServiceDescription variant="body1">
-            Criamos APIs RESTful robustas e seguras que conectam seus sistemas de forma eficiente. 
-            Nossas soluções seguem as melhores práticas do mercado, com foco em performance, 
-            escalabilidade e documentação clara.
+            Simplificamos e automatizamos processos operacionais para aumentar a eficiência e reduzir erros.
+            Aplicamos tecnologia inteligente para executar tarefas repetitivas de forma autônoma, liberando sua equipe para focar no que realmente importa e impulsionando a produtividade.
+          </ServiceDescription>
+        </ServiceCard>
+
+        <ServiceCard elevation={0}>
+          <ServiceIcon>
+            🛠️
+          </ServiceIcon>
+          <ServiceTitle variant="h5">
+            Ferramentas sob Medida e Integrações
+          </ServiceTitle>
+          <ServiceDescription variant="body1">
+            Desenvolvemos ferramentas funcionais e ajustadas às necessidades reais do seu negócio.
+            Realizamos integrações inteligentes entre plataformas, fazendo seus sistemas trabalharem em conjunto de forma fluida e eficiente — criando uma operação mais conectada, ágil e sustentável.
           </ServiceDescription>
         </ServiceCard>
       </Grid>

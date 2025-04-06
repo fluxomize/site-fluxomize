@@ -65,7 +65,7 @@ export const About: React.FC = () => {
     <AboutContainer>
       <Content>
         <Title variant="h2">
-          Sobre a Fluxomize
+          Sobre a Flux
         </Title>
         <Description variant="body1">
           Fundada em 2025, a Fluxomize nasceu com um propósito claro: democratizar o acesso à tecnologia 
@@ -86,64 +86,48 @@ export const About: React.FC = () => {
         </Description>
 
         <SectionTitle variant="h4">
-          Nossa Visão
+          Visão
         </SectionTitle>
         <Description variant="body1">
-          Ser reconhecida como uma das 5 maiores referências em qualidade e automação no Brasil até 2030,
-          estabelecendo novos padrões de excelência e inovação no mercado nacional. Almejamos liderar
-          a transformação digital das empresas brasileiras, sendo sinônimo de confiabilidade e resultados
-          excepcionais em soluções tecnológicas.
+          Transformar o avanço da inteligência artificial e da automação em soluções práticas, eficientes e aplicáveis — com clareza, responsabilidade e foco em resultado.
         </Description>
 
         <SectionTitle variant="h4">
-          Nossos Valores
+          Valores
         </SectionTitle>
-        <Grid container spacing={2} sx={{ mb: 4 }}>
-          <Grid item xs={12} sm={4}>
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={4}>
             <ServiceCard elevation={0}>
-              <ServiceTitle variant="h6">Inovação Constante</ServiceTitle>
-              <ServiceDescription variant="body2">
-                Buscamos sempre as soluções mais avançadas e criativas.
+              <ServiceTitle variant="h5">
+                1. Inteligência Estratégica
+              </ServiceTitle>
+              <ServiceDescription variant="body1">
+                Cada ação parte de uma leitura ampla do contexto e se conecta com objetivos reais.
+                Pensamos antes de construir — e construímos para durar.
               </ServiceDescription>
             </ServiceCard>
           </Grid>
-          <Grid item xs={12} sm={4}>
+
+          <Grid item xs={12} md={4}>
             <ServiceCard elevation={0}>
-              <ServiceTitle variant="h6">Excelência Técnica</ServiceTitle>
-              <ServiceDescription variant="body2">
-                Comprometimento com a qualidade em cada linha de código.
+              <ServiceTitle variant="h5">
+                2. Clareza Aplicada
+              </ServiceTitle>
+              <ServiceDescription variant="body1">
+                Eliminamos a complexidade desnecessária.
+                Entregamos estruturas objetivas, compreensíveis e com foco total em resultado.
               </ServiceDescription>
             </ServiceCard>
           </Grid>
-          <Grid item xs={12} sm={4}>
+
+          <Grid item xs={12} md={4}>
             <ServiceCard elevation={0}>
-              <ServiceTitle variant="h6">Transparência</ServiceTitle>
-              <ServiceDescription variant="body2">
-                Comunicação clara e honesta em todas as interações.
-              </ServiceDescription>
-            </ServiceCard>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <ServiceCard elevation={0}>
-              <ServiceTitle variant="h6">Colaboração</ServiceTitle>
-              <ServiceDescription variant="body2">
-                Trabalho em equipe e parceria genuína com nossos clientes.
-              </ServiceDescription>
-            </ServiceCard>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <ServiceCard elevation={0}>
-              <ServiceTitle variant="h6">Responsabilidade Social</ServiceTitle>
-              <ServiceDescription variant="body2">
-                Compromisso com o impacto positivo na sociedade.
-              </ServiceDescription>
-            </ServiceCard>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <ServiceCard elevation={0}>
-              <ServiceTitle variant="h6">Sustentabilidade</ServiceTitle>
-              <ServiceDescription variant="body2">
-                Desenvolvimento de soluções com visão de longo prazo.
+              <ServiceTitle variant="h5">
+                3. Responsabilidade
+              </ServiceTitle>
+              <ServiceDescription variant="body1">
+                Cumprimos o que prometemos.
+                Atuamos com ética, transparência e compromisso com o impacto do que entregamos.
               </ServiceDescription>
             </ServiceCard>
           </Grid>

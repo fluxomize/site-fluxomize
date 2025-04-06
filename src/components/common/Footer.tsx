@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
       <FooterContent>
         <SocialLinks>
           <IconButton
-            href="https://linkedin.com"
+            href="https://linkedin.com/company/fluxomize"
             target="_blank"
             aria-label="LinkedIn"
             sx={{ color: 'var(--text)' }}
@@ -45,20 +45,12 @@ const Footer: React.FC = () => {
             <LinkedInIcon />
           </IconButton>
           <IconButton
-            href="https://github.com"
+            href="https://github.com/fluxomize"
             target="_blank"
             aria-label="GitHub"
             sx={{ color: 'var(--text)' }}
           >
             <GitHubIcon />
-          </IconButton>
-          <IconButton
-            href="https://instagram.com"
-            target="_blank"
-            aria-label="Instagram"
-            sx={{ color: 'var(--text)' }}
-          >
-            <InstagramIcon />
           </IconButton>
         </SocialLinks>
         <Copyright variant="body2">

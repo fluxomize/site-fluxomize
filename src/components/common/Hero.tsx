@@ -98,7 +98,7 @@ export const Hero: React.FC = () => {
     left: `${Math.random() * 90}%`,
     width: `${Math.random() * 30 + 35}px`,
     duration: Math.random() * 8 + 15,
-    delay: Math.random() * 4
+    delay: Math.random() * 5
   }));
 
   return (
@@ -107,20 +107,20 @@ export const Hero: React.FC = () => {
         {shapes.map((shape, index) => (
           <Shape
             key={index}
-            style={{
-              left: shape.left,
-              width: shape.width,
-              height: shape.width
-            }}
-            delay={shape.delay}
+            style={{ left: shape.left, width: shape.width }}
             duration={shape.duration}
+            delay={shape.delay}
           />
         ))}
       </FloatingShapes>
-      
       <HeroContent>
-        <h1>Fluxomize - Fluxo automatizado e otimizado</h1>
-        <p>Automatize e otimize os processos da sua empresa com soluções tecnológicas personalizadas. Nossa expertise em automação de fluxos impulsiona a eficiência e produtividade do seu negócio, garantindo resultados excepcionais.</p>
+        <h1>Flux</h1>
+        <p>
+          Automatizamos processos, testamos sistemas com rigor e criamos ferramentas sob medida que ajudam sua empresa a crescer com inteligência, eficiência e leveza.
+        </p>
+        <CTAButton onClick={() => window.location.href = '/contact'}>
+          Fale Conosco
+        </CTAButton>
       </HeroContent>
     </HeroContainer>
   );
