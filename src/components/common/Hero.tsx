@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import GlobalStyles from '../../styles/globalStyles';
 
 const float = keyframes`
   0% {
@@ -89,7 +90,11 @@ export const Hero: React.FC = () => {
         ))}
       </FloatingShapes>
       <HeroContent>
-        <h1>Flux</h1>
+        <img
+          src="/Tipografia_Flux_Gelo.png"
+          alt="Flux logo"
+          style={{ userSelect: 'none', maxWidth: '100%', height: 'auto' }}
+        />
         <p>
           Automatizamos processos, testamos sistemas com rigor e criamos ferramentas sob medida que ajudam sua empresa a crescer com inteligência, eficiência e leveza.
         </p>

@@ -16,7 +16,35 @@ const backgroundAnimation = keyframes`
   }
 `;
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
+  @font-face {
+    font-family: 'Manrope';
+    src: url('/fontes/_manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Vinila';
+    src: url('/fontes/_vinila/50699.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Vinila Condensed';
+    src: url('/fontes/_vinila/_condensed/50723.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Vinila Compressed';
+    src: url('/fontes/_vinila/_compressed/50711.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
   :root {
     --background: #051014;
     --primary: #00e6b8;
@@ -49,8 +77,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: var(--background);
     color: var(--text);
-    font-family: 'Orbitron', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Manrope', sans-serif;
     -webkit-font-smoothing: antialiased;
     background: linear-gradient(
       45deg,
@@ -85,12 +112,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body, input, textarea, button {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-weight: 400;
   }
 
   h1, h2, h3, h4, h5, h6, strong {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Vinila', serif;
     font-weight: 600;
     color: var(--text);
     text-shadow: 0 0 15px rgba(0, 230, 184, 0.3);
@@ -348,3 +375,5 @@ export const FooterTitle = styled(Typography)`
     margin-bottom: 2rem;
   }
 `;
+
+export default GlobalStyles;

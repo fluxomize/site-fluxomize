@@ -2,19 +2,41 @@
 
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import logo from '../../logo.svg';
 
 const HeaderContainer = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
   background: var(--shape);
   border-bottom: 1px solid var(--border);
+  max-height: 72px;
+  height: 72px;
+  box-sizing: border-box;
 `;
 
 const Logo = styled.img`
-  height: 50px;
+  height: 56px;
+  max-width: 320px;
+  width: auto;
+  transition: transform 0.3s ease;
+  filter: brightness(0.95);
+  object-fit: contain;
+  
+  @media (max-width: 600px) {
+    height: 36px;
+    max-width: 160px;
+  }
+  
+  &:hover {
+    transform: scale(1.05);
+    filter: brightness(1);
+  }
+`;
+
+const LogoLink = styled(Link)`
+  display: block;
+  padding: 0.5rem 0;
 `;
 
 const Nav = styled.nav`
@@ -54,17 +76,12 @@ const NavLink = styled(Link)`
 export const Header = () => {
   return (
     <HeaderContainer>
-      <Link to="/">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-          <span style={{ 
-            color: 'var(--text)',
-            fontSize: '1.2rem',
-            fontWeight: 'bold'
-          }}>
-            Flux
-          </span>
-        </div>
-      </Link>
+      <LogoLink to="/">
+        <Logo 
+          src="/Logotipo_Flux_Gelo.png" 
+          style={{ userSelect: 'none'}}
+        />
+      </LogoLink>
       <Nav>
         <NavLink to="/contact">Contato</NavLink>
       </Nav>
