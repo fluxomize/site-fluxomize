@@ -96,7 +96,7 @@ export const Hero: React.FC = () => {
           style={{ userSelect: 'none', maxWidth: '100%', height: 'auto' }}
         />
         <p>
-          Automatizamos processos, testamos sistemas com rigor e criamos ferramentas sob medida que ajudam sua empresa a crescer com inteligência, eficiência e leveza.
+        Transformando processos em soluções claras e confiáveis.
         </p>
       </HeroContent>
     </HeroContainer>
