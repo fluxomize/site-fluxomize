@@ -1,49 +1,48 @@
-# Getting Started with Create React App
+# Flux Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é o website oficial da Flux, construído com tecnologias modernas para melhor performance e experiência de desenvolvimento.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- **Vite** - Build tool rápido e moderno
+- **React 19** - Biblioteca JavaScript para interfaces de usuário
+- **Tailwind CSS v4** - Framework CSS utilitário
+- **shadcn/ui** - Componentes de UI baseados em Radix UI
+- **Lucide React** - Ícones SVG
 
-### `npm start`
+## Scripts Disponíveis
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+No diretório do projeto, você pode executar:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `npm run dev`
 
-### `npm test`
+Executa o aplicativo no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A página será recarregada automaticamente quando você fizer edições.\
+Você também verá erros de lint no console.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Constrói o aplicativo para produção na pasta `build`.\
+Ele agrupa corretamente o React no modo de produção e otimiza a construção para melhor performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A construção é minificada e os nomes dos arquivos incluem hashes.\
+Seu aplicativo está pronto para ser implantado!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run preview`
 
-### `npm run eject`
+Serve a versão de produção localmente para teste.\
+Execute após `npm run build` para visualizar a versão otimizada.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Saiba Mais
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para aprender mais sobre as tecnologias utilizadas:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Documentação do Vite](https://vitejs.dev/)
+- [Documentação do React](https://reactjs.org/)
+- [Documentação do Tailwind CSS](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
 
 ## Publicação no GitHub Pages
 
@@ -57,9 +56,9 @@ Este projeto está configurado para ser publicado no GitHub Pages usando o GitHu
    "homepage": "https://seu-usuario.github.io/site-fluxomize"
    ```
 3. Configure os seguintes secrets no seu repositório GitHub (Settings > Secrets and variables > Actions):
-   - `EMAILJS_SERVICE_ID`: Seu ID de serviço do EmailJS
-   - `EMAILJS_TEMPLATE_ID`: Seu ID de template do EmailJS
-   - `EMAILJS_PUBLIC_KEY`: Sua chave pública do EmailJS
+   - `VITE_EMAILJS_SERVICE_ID`: Seu ID de serviço do EmailJS
+   - `VITE_EMAILJS_TEMPLATE_ID`: Seu ID de template do EmailJS
+   - `VITE_EMAILJS_PUBLIC_KEY`: Sua chave pública do EmailJS
 
 4. Habilite o GitHub Pages no seu repositório:
    - Vá para Settings > Pages
